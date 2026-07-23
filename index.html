@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kopi Senja — Kedai Kopi & Camilan Rumahan | Denpasar, Bali</title>
+<meta name="description" content="Kopi Senja, kedai kopi rumahan di Denpasar. Racikan kopi lokal, camilan rumahan, dan tempat ngumpul yang hangat. Pesan via WhatsApp sekarang!">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#beranda">Langsung ke konten</a>
+
+<!-- PROMO BAR -->
+<div class="promo-bar" id="promoBar">
+  <p>☕ Promo hari ini: beli 2 gelas kopi susu, gratis 1 camilan rumahan — khusus dine-in
+    <button class="promo-close" id="promoClose" aria-label="Tutup notifikasi promo">✕</button>
+  </p>
+</div>
+
+<!-- HEADER -->
+<header class="site-header" id="top">
+  <nav class="navbar" aria-label="Navigasi utama">
+    <a href="#beranda" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M8 3.5c0 1-1 1-1 2s1 1 1 2M12 3.5c0 1-1 1-1 2s1 1 1 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">Kopi<em>Senja</em></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu navigasi">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#beranda" class="nav-link" data-nav>Beranda</a></li>
+      <li><a href="#profil" class="nav-link" data-nav>Profil</a></li>
+      <li><a href="#menu" class="nav-link" data-nav>Katalog</a></li>
+      <li><a href="#kontak" class="nav-link" data-nav>Kontak</a></li>
+      <li><a href="#pesan" class="nav-cta pulse-btn" id="navCta">🛒 Pesan Sekarang</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===== BERANDA / HERO ===== -->
+  <section id="beranda" class="hero">
+    <div class="hero-bg-orbs" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-copy-col">
+        <span class="eyebrow">☕ Kedai kopi rumahan sejak 2019 — Denpasar, Bali</span>
+        <h1 class="hero-title">Ngopi enak,<br><span class="hl">nggak ribet.</span></h1>
+        <p class="hero-copy">Kopi Senja meracik biji kopi dari petani lokal Bali dan Flores, disangrai kecil-kecilan tiap minggu, lalu disajikan bareng camilan rumahan untuk teman ngobrol dan mengerjakan apa saja.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary" id="heroCtaMenu">Lihat Menu & Katalog</a>
+          <a href="#pesan" class="btn btn-ghost" id="heroCtaOrder">Pesan Sekarang →</a>
+        </div>
+        <dl class="hero-stats">
+          <div class="stat-item">
+            <dt class="stat-num" data-target="6">0</dt>
+            <dd>tahun beroperasi</dd>
+          </div>
+          <div class="stat-item">
+            <dt class="stat-num" data-target="18">0</dt>
+            <dd>varian menu</dd>
+          </div>
+          <div class="stat-item">
+            <dt class="stat-num" data-target="3">0</dt>
+            <dd>asal biji kopi</dd>
+          </div>
+          <div class="stat-item">
+            <dt class="stat-num" data-target="500">0</dt>
+            <dd>pelanggan setia</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-blob"></div>
+        <div class="hero-card-float card-float-1">
+          <span class="float-emoji">🔥</span>
+          <div>
+            <strong>Best Seller</strong>
+            <span>Kopi Susu Gula Aren</span>
+          </div>
+        </div>
+        <div class="hero-card-float card-float-2">
+          <span class="float-emoji">⭐</span>
+          <div>
+            <strong>Rating</strong>
+            <span>4.9 / 5.0</span>
+          </div>
+        </div>
+        <svg class="hero-cup" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 70h120l-10 100a30 30 0 0 1-30 27H70a30 30 0 0 1-30-27L30 70Z" fill="#FFF7EF" stroke="#171412" stroke-width="4"/>
+          <path d="M150 82h14a24 24 0 0 1 0 48h-18" fill="none" stroke="#171412" stroke-width="4" stroke-linecap="round"/>
+          <path d="M50 70c-4-14 6-22 6-32M90 70c-4-14 6-22 6-32M130 70c-4-14 6-22 6-32" fill="none" stroke="#7A1420" stroke-width="5" stroke-linecap="round"/>
+          <rect x="26" y="60" width="128" height="16" rx="8" fill="#7A1420"/>
+          <text x="90" y="150" font-size="36" text-anchor="middle" dominant-baseline="middle">☕</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <span class="scroll-arrow">↓</span>
+    </div>
+  </section>
+
+  <!-- ===== PROFIL ===== -->
+  <section id="profil" class="section profil reveal">
+    <div class="section-head">
+      <span class="eyebrow eyebrow-dark">🏡 Profil Usaha</span>
+      <h2>Dari dapur rumah<br>ke meja kalian</h2>
+      <p class="section-sub">Cerita kecil sebuah kedai kopi yang tumbuh dari cinta akan kopi lokal dan kebersamaan.</p>
+    </div>
+
+    <div class="profil-grid">
+      <div class="profil-story">
+        <div class="story-block">
+          <div class="story-timeline">
+            <div class="timeline-item reveal-delay-1">
+              <span class="timeline-year">2019</span>
+              <div class="timeline-content">
+                <h3>Awal Mula</h3>
+                <p>Dimulai dari teras rumah kecil di Denpasar, sebuah kebiasaan menyangrai kopi untuk keluarga.</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal-delay-2">
+              <span class="timeline-year">2021</span>
+              <div class="timeline-content">
+                <h3>Berkembang</h3>
+                <p>Mulai melayani pelanggan luar, menambah menu camilan rumahan buatan sendiri.</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal-delay-3">
+              <span class="timeline-year">2024</span>
+              <div class="timeline-content">
+                <h3>Kini</h3>
+                <p>Melayani 500+ pelanggan setia dengan 18 varian menu dari biji kopi lokal pilihan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profil-values">
+          <div class="value-card reveal-delay-1">
+            <div class="value-icon-wrap">🌱</div>
+            <h3>Biji Kopi Lokal</h3>
+            <p>Bersumber langsung dari petani Kintamani & Flores dengan harga adil.</p>
+          </div>
+          <div class="value-card reveal-delay-2">
+            <div class="value-icon-wrap">🔥</div>
+            <h3>Sangrai Mingguan</h3>
+            <p>Batch kecil tiap minggu supaya kopi selalu dalam kondisi paling segar.</p>
+          </div>
+          <div class="value-card reveal-delay-3">
+            <div class="value-icon-wrap">🏡</div>
+            <h3>Dibuat di Rumah</h3>
+            <p>Camilan dan racikan dibuat langsung oleh tim kecil kami, bukan pabrik.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profil-aside">
+        <div class="profil-card">
+          <div class="profil-card-header">
+            <span class="profil-avatar">☕</span>
+            <div>
+              <h3>Kopi Senja</h3>
+              <span class="profil-badge">Verified Business</span>
+            </div>
+          </div>
+          <ul class="fact-list">
+            <li><span>📅 Didirikan</span><strong>2019</strong></li>
+            <li><span>📍 Lokasi</span><strong>Denpasar, Bali</strong></li>
+            <li><span>👥 Tim</span><strong>7 orang</strong></li>
+            <li><span>🕒 Jam buka</span><strong>08.00–21.00 WITA</strong></li>
+            <li><span>📦 Pemesanan</span><strong>Datang / WhatsApp</strong></li>
+            <li><span>⭐ Rating</span><strong>4.9 / 5.0</strong></li>
+          </ul>
+          <blockquote>
+            "Kami percaya secangkir kopi yang baik lahir dari petani yang dihargai dan proses yang tidak buru-buru."
+            <cite>— Pendiri Kopi Senja</cite>
+          </blockquote>
+        </div>
+
+        <div class="profil-quick-actions">
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="quick-action-btn" id="quickWa">
+            <span>💬</span> Chat WhatsApp
+          </a>
+          <a href="#menu" class="quick-action-btn quick-action-outline" id="quickMenu">
+            <span>📋</span> Lihat Menu
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== MENU & KATALOG ===== -->
+  <section id="menu" class="section katalog reveal">
+    <div class="section-head">
+      <span class="eyebrow eyebrow-dark">📋 Menu & Katalog</span>
+      <h2>Pilihan terbaik<br>untuk harimu</h2>
+      <p class="section-sub">Tingkat sangrai ditandai dengan titik di setiap kartu — semakin banyak titik, semakin gelap sangrainya.</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="menu-filter" role="tablist" aria-label="Filter kategori menu">
+      <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true" id="filterAll">
+        <span>🍽️</span> Semua
+      </button>
+      <button class="filter-btn" data-filter="kopi" role="tab" aria-selected="false" id="filterKopi">
+        <span>☕</span> Kopi
+      </button>
+      <button class="filter-btn" data-filter="non-kopi" role="tab" aria-selected="false" id="filterNonKopi">
+        <span>🍵</span> Non-Kopi
+      </button>
+      <button class="filter-btn" data-filter="camilan" role="tab" aria-selected="false" id="filterCamilan">
+        <span>🍿</span> Camilan
+      </button>
+    </div>
+
+    <!-- Menu cards -->
+    <div class="menu-grid" id="menuGrid">
+
+      <article class="menu-card" data-category="kopi" id="cardSenjaHitam">
+        <div class="menu-card-media">
+          <span class="menu-icon">☕</span>
+          <div class="menu-card-glow"></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Senja Hitam</h3>
+            <span class="price">Rp 20.000</span>
+          </div>
+          <p>Espresso tunggal dari biji Kintamani, rasa cokelat dan sedikit asam segar.</p>
+          <div class="roast" aria-label="Tingkat sangrai: medium">
+            <span class="roast-label">Sangrai</span>
+            <span class="dot"></span><span class="dot on"></span><span class="dot"></span>
+          </div>
+          <a class="order-btn" href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%2C%20saya%20mau%20pesan%20Senja%20Hitam" target="_blank" rel="noopener" id="orderSenjaHitam">
+            <span>💬</span> Pesan via WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <article class="menu-card featured" data-category="kopi" id="cardKopiSusu">
+        <div class="menu-card-media">
+          <span class="menu-icon">🥤</span>
+          <span class="ribbon">🔥 Best Seller</span>
+          <div class="menu-card-glow"></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Kopi Susu Gula Aren</h3>
+            <span class="price">Rp 24.000</span>
+          </div>
+          <p>Kopi robusta Flores dengan susu segar dan gula aren asli Bali.</p>
+          <div class="roast" aria-label="Tingkat sangrai: dark">
+            <span class="roast-label">Sangrai</span>
+            <span class="dot"></span><span class="dot on"></span><span class="dot on"></span>
+          </div>
+          <a class="order-btn" href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%2C%20saya%20mau%20pesan%20Kopi%20Susu%20Gula%20Aren" target="_blank" rel="noopener" id="orderKopiSusu">
+            <span>💬</span> Pesan via WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="kopi" id="cardV60">
+        <div class="menu-card-media">
+          <span class="menu-icon">🫖</span>
+          <div class="menu-card-glow"></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>V60 Manual Brew</h3>
+            <span class="price">Rp 28.000</span>
+          </div>
+          <p>Seduh manual biji pilihan minggu ini, rasa berubah tiap batch sangrai.</p>
+          <div class="roast" aria-label="Tingkat sangrai: light">
+            <span class="roast-label">Sangrai</span>
+            <span class="dot on"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <a class="order-btn" href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%2C%20saya%20mau%20pesan%20V60%20Manual%20Brew" target="_blank" rel="noopener" id="orderV60">
+            <span>💬</span> Pesan via WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="kopi" id="cardEspresso">
+        <div class="menu-card-media">
+          <span class="menu-icon">☕</span>
+          <div class="menu-card-glow"></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Americano Senja</h3>
+            <span class="price">Rp 22.000</span>
+          </div>
+          <p>Double shot espresso dengan air panas, clean dan bold, cocok untuk pagi hari.</p>
+          <div class="roast" aria-label="Tingkat sangrai: dark">
+            <span class="roast-label">Sangrai</span>
+            <span class="dot"></span><span class="dot on"></span><span class="dot on"></span>
+          </div>
+          <a class="order-btn" href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%2C%20saya%20mau%20pesan%20Americano%20Senja" target="_blank" rel="noopener" id="orderAmericano">
+            <span>💬</span> Pesan via WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="non-kopi" id="cardCokelat">
+        <div class="menu-card-media">
+          <span class="menu-icon">🍫</span>
+          <div class="menu-card-glow"></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Cokelat Senja</h3>
+            <span class="price">Rp 22.000</span>
+          </div>
+          <p>Cokelat panas racikan sendiri, disajikan hangat atau dingin sesuai selera.</p>
+          <div class="roast" aria-label="Tanpa kopi">
+            <span class="roast-label">Non-kopi</span>
+          </div>
+          <a class="order-btn" href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%2C%20saya%20mau%20pesan%20Cokelat%20Senja" target="_blank" rel="noopener" id="orderCokelat">
+            <span>💬</span> Pesan via WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="non-kopi" id="cardTeh">
+        <div class="menu-card-media">
+          <span class="menu-icon">🍵</span>
+          <div class="menu-card-glow"></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Teh Serai Jahe</h3>
+            <span class="price">Rp 18.000</span>
+          </div>
+          <p>Racikan serai dan jahe segar, cocok untuk sore yang berangin dan santai.</p>
+          <div class="roast" aria-label="Tanpa kopi">
+            <span class="roast-label">Non-kopi</span>
+          </div>
+          <a class="order-btn" href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%2C%20saya%20mau%20pesan%20Teh%20Serai%20Jahe" target="_blank" rel="noopener" id="orderTeh">
+            <span>💬</span> Pesan via WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <article class="menu-card featured" data-category="camilan" id="cardPisang">
+        <div class="menu-card-media">
+          <span class="menu-icon">🍌</span>
+          <span class="ribbon">⭐ Favorit</span>
+          <div class="menu-card-glow"></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Pisang Goreng Krispi</h3>
+            <span class="price">Rp 15.000</span>
+          </div>
+          <p>Pisang kepok digoreng krispi, disajikan dengan saus cokelat rumahan spesial.</p>
+          <div class="roast" aria-label="Camilan">
+            <span class="roast-label">Camilan</span>
+          </div>
+          <a class="order-btn" href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%2C%20saya%20mau%20pesan%20Pisang%20Goreng%20Krispi" target="_blank" rel="noopener" id="orderPisang">
+            <span>💬</span> Pesan via WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="camilan" id="cardRoti">
+        <div class="menu-card-media">
+          <span class="menu-icon">🍞</span>
+          <div class="menu-card-glow"></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Roti Bakar Srikaya</h3>
+            <span class="price">Rp 17.000</span>
+          </div>
+          <p>Roti bakar dengan selai srikaya buatan sendiri dan taburan keju lumer.</p>
+          <div class="roast" aria-label="Camilan">
+            <span class="roast-label">Camilan</span>
+          </div>
+          <a class="order-btn" href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%2C%20saya%20mau%20pesan%20Roti%20Bakar%20Srikaya" target="_blank" rel="noopener" id="orderRoti">
+            <span>💬</span> Pesan via WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="camilan" id="cardKentang">
+        <div class="menu-card-media">
+          <span class="menu-icon">🍟</span>
+          <div class="menu-card-glow"></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Kentang Sambal Matah</h3>
+            <span class="price">Rp 19.000</span>
+          </div>
+          <p>Kentang goreng renyah dengan taburan sambal matah khas Bali yang pedas segar.</p>
+          <div class="roast" aria-label="Camilan">
+            <span class="roast-label">Camilan</span>
+          </div>
+          <a class="order-btn" href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%2C%20saya%20mau%20pesan%20Kentang%20Goreng%20Sambal%20Matah" target="_blank" rel="noopener" id="orderKentang">
+            <span>💬</span> Pesan via WhatsApp
+          </a>
+        </div>
+      </article>
+
+    </div>
+    <p class="menu-note" id="menuEmpty" hidden>Belum ada menu untuk kategori ini.</p>
+  </section>
+
+  <!-- ===== KONTAK ===== -->
+  <section id="kontak" class="section kontak reveal">
+    <div class="section-head">
+      <span class="eyebrow eyebrow-dark">📍 Kontak</span>
+      <h2>Mampir atau<br>sapa dulu</h2>
+      <p class="section-sub">Kami terbuka untuk kunjungan langsung, pesan via WhatsApp, atau sekadar tanya-tanya lewat form di bawah ini.</p>
+    </div>
+
+    <div class="kontak-layout">
+
+      <!-- Info kontak -->
+      <div class="kontak-info-wrap">
+        <div class="kontak-info-cards">
+          <a href="https://maps.google.com/?q=Jl.+Merpati+No.12+Denpasar+Bali" target="_blank" rel="noopener" class="kontak-info-card" id="kontakAlamat">
+            <div class="kontak-icon-wrap">📍</div>
+            <div>
+              <strong>Alamat</strong>
+              <p>Jl. Merpati No. 12, Denpasar, Bali 80113</p>
+            </div>
+            <span class="kontak-arrow">→</span>
+          </a>
+          <div class="kontak-info-card" id="kontakJam">
+            <div class="kontak-icon-wrap">🕒</div>
+            <div>
+              <strong>Jam Buka</strong>
+              <p>Setiap hari, 08.00 – 21.00 WITA</p>
+            </div>
+            <span class="open-badge" id="openBadge">Buka</span>
+          </div>
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="kontak-info-card" id="kontakWa">
+            <div class="kontak-icon-wrap">💬</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>+62 812-3456-7890</p>
+            </div>
+            <span class="kontak-arrow">→</span>
+          </a>
+          <a href="mailto:halo@kopisenja.id" class="kontak-info-card" id="kontakEmail">
+            <div class="kontak-icon-wrap">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <p>halo@kopisenja.id</p>
+            </div>
+            <span class="kontak-arrow">→</span>
+          </a>
+          <a href="https://instagram.com/kopisenja.id" target="_blank" rel="noopener" class="kontak-info-card" id="kontakIG">
+            <div class="kontak-icon-wrap">📷</div>
+            <div>
+              <strong>Instagram</strong>
+              <p>@kopisenja.id</p>
+            </div>
+            <span class="kontak-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Map embed -->
+        <div class="kontak-map">
+          <iframe
+            title="Lokasi Kopi Senja di Denpasar Bali"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=115.196%2C-8.680%2C115.236%2C-8.650&layer=mapnik&marker=-8.665%2C115.216"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Form kontak -->
+      <div class="kontak-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <div class="form-header">
+            <span class="form-icon">💌</span>
+            <div>
+              <h3>Kirim Pesan Cepat</h3>
+              <p class="form-hint">Form ini akan membuka aplikasi email dengan pesan yang sudah terisi.</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="fname">Nama Lengkap</label>
+            <input type="text" id="fname" name="fname" required placeholder="Nama kamu">
+          </div>
+          <div class="form-row">
+            <label for="femail">Alamat Email</label>
+            <input type="email" id="femail" name="femail" required placeholder="email@contoh.com">
+          </div>
+          <div class="form-row">
+            <label for="fphone">Nomor WhatsApp <span class="optional">(opsional)</span></label>
+            <input type="tel" id="fphone" name="fphone" placeholder="+62 8xx-xxxx-xxxx">
+          </div>
+          <div class="form-row">
+            <label for="fmessage">Pesan</label>
+            <textarea id="fmessage" name="fmessage" rows="4" required placeholder="Tulis pesan atau pertanyaan kamu..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitContact">
+            <span class="btn-icon">✉️</span> Kirim Pesan
+          </button>
+          <p class="form-success" id="formSuccess" hidden>✅ Pesan berhasil dikirim! Kami akan membalas segera.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PESAN SEKARANG ===== -->
+  <section id="pesan" class="section pesan-section reveal">
+    <div class="pesan-bg-decoration" aria-hidden="true">
+      <span class="deco-circle deco-1"></span>
+      <span class="deco-circle deco-2"></span>
+    </div>
+
+    <div class="pesan-inner">
+      <div class="pesan-header">
+        <span class="eyebrow">🛒 Pesan Sekarang</span>
+        <h2>Siap memesan?<br>Pilih caramu!</h2>
+        <p>Kami mempermudah proses pemesanan — pilih cara yang paling nyaman buatmu.</p>
+      </div>
+
+      <!-- Order method cards -->
+      <div class="order-methods">
+
+        <div class="order-method-card primary-method" id="methodWa">
+          <div class="method-badge">⚡ Tercepat</div>
+          <div class="method-icon">💬</div>
+          <h3>Pesan via WhatsApp</h3>
+          <p>Langsung chat dengan kami. Respons cepat, proses mudah, siap dalam hitungan menit.</p>
+          <ul class="method-perks">
+            <li>✅ Respons dalam 5 menit</li>
+            <li>✅ Pilih menu & customisasi</li>
+            <li>✅ Bisa request khusus</li>
+          </ul>
+          <a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%21%20Saya%20mau%20pesan%20sekarang.%20Boleh%20lihat%20menu%20terbaru%3F" target="_blank" rel="noopener" class="btn btn-wa" id="btnPesanWa">
+            💬 Chat WhatsApp Sekarang
+          </a>
+        </div>
+
+        <div class="order-method-card" id="methodVisit">
+          <div class="method-icon">🏡</div>
+          <h3>Datang Langsung</h3>
+          <p>Kunjungi kedai kami dan nikmati suasana hangat sambil memesan langsung di tempat.</p>
+          <ul class="method-perks">
+            <li>✅ Dine-in & take away</li>
+            <li>✅ Promo khusus dine-in</li>
+            <li>✅ Bisa bayar tunai / digital</li>
+          </ul>
+          <a href="https://maps.google.com/?q=Jl.+Merpati+No.12+Denpasar+Bali" target="_blank" rel="noopener" class="btn btn-ghost" id="btnPesanMaps">
+            📍 Buka di Google Maps
+          </a>
+        </div>
+
+        <div class="order-method-card" id="methodInstagram">
+          <div class="method-icon">📷</div>
+          <h3>DM Instagram</h3>
+          <p>Follow & DM kami di Instagram. Cocok untuk kamu yang sering aktif di sosmed.</p>
+          <ul class="method-perks">
+            <li>✅ Lihat foto menu terkini</li>
+            <li>✅ Update promo harian</li>
+            <li>✅ Story & konten eksklusif</li>
+          </ul>
+          <a href="https://instagram.com/kopisenja.id" target="_blank" rel="noopener" class="btn btn-ig" id="btnPesanIG">
+            📷 Buka Instagram Kami
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Quick order form -->
+      <div class="quick-order-wrap">
+        <div class="quick-order-card">
+          <div class="quick-order-header">
+            <h3>🛒 Quick Order — Pilih Menu & Pesan Langsung</h3>
+            <p>Pilih menu yang kamu inginkan, lalu kami arahkan langsung ke WhatsApp!</p>
+          </div>
+          <div class="quick-order-body">
+            <div class="quick-menu-grid" id="quickMenuGrid">
+              <!-- Akan diisi oleh JS -->
+            </div>
+            <div class="quick-order-summary" id="quickSummary">
+              <div class="summary-empty" id="summaryEmpty">
+                <span>🛒</span>
+                <p>Belum ada item dipilih</p>
+              </div>
+              <div class="summary-items" id="summaryItems" hidden>
+                <h4>Pesananmu:</h4>
+                <ul id="summaryList"></ul>
+                <div class="summary-total">
+                  <span>Total</span>
+                  <strong id="summaryTotal">Rp 0</strong>
+                </div>
+                <a href="#" class="btn btn-wa btn-full" id="submitQuickOrder">
+                  💬 Pesan via WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FLOATING WA BUTTON -->
+<a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%21%20Saya%20mau%20pesan." target="_blank" rel="noopener" class="fab-wa" id="fabWa" aria-label="Chat WhatsApp">
+  <span class="fab-icon">💬</span>
+  <span class="fab-label">Chat Kami</span>
+</a>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">☕</span>
+      <div>
+        <strong>KopiSenja</strong>
+        <p>Kedai kopi rumahan, Denpasar Bali</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#beranda">Beranda</a>
+      <a href="#profil">Profil</a>
+      <a href="#menu">Katalog</a>
+      <a href="#kontak">Kontak</a>
+      <a href="#pesan">Pesan</a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+      <a href="https://instagram.com/kopisenja.id" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+      <a href="mailto:halo@kopisenja.id" aria-label="Email">✉️</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Kopi Senja. Dibuat dengan ❤️ di Denpasar, Bali.</p>
+    <a href="#top" class="back-top" id="backTop">Kembali ke atas ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
