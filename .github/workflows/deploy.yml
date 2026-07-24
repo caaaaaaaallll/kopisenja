@@ -29,7 +29,8 @@ jobs:
       - name: Upload Artifact ke GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          # Deploy khusus folder kopi-senja saja
+          path: './UAS/kopi-senja'
 
   deploy:
     name: Deploy
