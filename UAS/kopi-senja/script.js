@@ -218,7 +218,7 @@ contactForm.addEventListener('submit', (e) => {
   const phoneInfo = phone ? `\nNo. WA: ${phone}` : '';
   const body    = encodeURIComponent(`${message}${phoneInfo}\n\n— ${name} (${email})`);
 
-  window.location.href = `mailto:halo@kopisenja.id?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:haykalbastian.hb.hb@gmail.com?subject=${subject}&body=${body}`;
 
   // Show success state
   const submitBtn = $('#submitContact');
@@ -314,7 +314,7 @@ function renderSummary() {
   const lines = items.map(item => `- ${item.name} ×${item.qty} = ${fmt(item.price * item.qty)}`).join('%0A');
   const totalLine = `%0A%0ATotal: ${fmt(total)}`;
   const msg = `Halo%20Kopi%20Senja!%20Saya%20mau%20pesan%3A%0A${lines}${totalLine}`;
-  submitQuickOrder.href = `https://wa.me/+6282125886469?text=${msg}`;
+  submitQuickOrder.href = `https://wa.me/+6289680710351?text=${msg}`;
 }
 
 // ─── Smooth scroll for anchor links ──────────────────────────
